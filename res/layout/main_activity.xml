@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#888888"
+    tools:context=".MainActivity" >
+
+    <ViewFlipper
+        android:id="@+id/mainViewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.aroma.unrartool.MainScreen
+            android:id="@+id/mainScreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true" >
+
+        </com.aroma.unrartool.MainScreen>
+
+        <com.aroma.unrartool.FileBrowser
+            android:id="@+id/fileBrowser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.aroma.unrartool.FileBrowser>
+
+    </ViewFlipper>
+
+</RelativeLayout>
